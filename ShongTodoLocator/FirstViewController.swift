@@ -8,16 +8,8 @@
 
 import UIKit
 
-struct cellInfos {
-    let cell : Int!
-    let task : String!
-    let location : String!
-    
-}
-var cellArray = [cellInfos]()
-
-var examples = ["Create two controll view", "Create a cell", "create custom cell", "create task and location on second view", "share data from 2 to 1"]
-var listOfLocations = ["Berlin","Beuth Hochschule","Office","Edeka","Mitte"]
+var examples = ["create task and location on second view", "share data from 2 to 1"]
+var listOfLocations = ["test","test2"]
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -27,8 +19,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FirstViewControllerTableViewCell
+         print(listOfLocations)
+        if (listOfLocations.count > 0){
         
         cell.locationLabelFC.text = listOfLocations[indexPath.row]
+            print(listOfLocations)
+        }
+    
         cell.textLabel?.text = examples[indexPath.row]
         
         return(cell)
@@ -48,13 +45,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
-        cellArray = [
-            cellInfos(cell : 1, task : "share task and location", location : "first controller"),
-            cellInfos(cell : 2, task : "both infos need to be single", location : "first controller"),
-            cellInfos(cell : 2, task : "style infos", location : "first controller")
-        ]
-        
-        
+       
     }
 
     override func didReceiveMemoryWarning() {
