@@ -9,11 +9,14 @@
 import UIKit
 
 class detailViewController: UIViewController {
-
+    var stringPassed = ""
     @IBOutlet var detailLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-print(detailLabel.text)
+        detailLabel.text = stringPassed
     }
 
     override func didReceiveMemoryWarning() {

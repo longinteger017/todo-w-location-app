@@ -25,7 +25,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if (listOfLocations.count > 0){
         
         cell.locationLabelFC.text = listOfLocations[indexPath.row]
-            print(listOfLocations)
+           // print(listOfLocations)
         }
     
         cell.textLabel?.text = examples[indexPath.row]
@@ -43,7 +43,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let myVC = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
-        // should work but gives error: myVC.detailLabel.text = listOfLocations[indexPath.row]
+         myVC.stringPassed = "it works man!!"
         
         navigationController?.pushViewController(myVC, animated: true)
     }
