@@ -13,6 +13,7 @@
 		84CCB9011E46349C004A1423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CCB8FF1E46349C004A1423 /* Main.storyboard */; };
 		84CCB9031E46349C004A1423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CCB9021E46349C004A1423 /* Assets.xcassets */; };
 		84CCB9061E46349C004A1423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CCB9041E46349C004A1423 /* LaunchScreen.storyboard */; };
+		84CCB9101E463D34004A1423 /* FirstViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCB90F1E463D34004A1423 /* FirstViewControllerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84CCB9021E46349C004A1423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CCB9051E46349C004A1423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CCB9071E46349C004A1423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CCB90F1E463D34004A1423 /* FirstViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		84CCB8ED1E46349C004A1423 = {
 			isa = PBXGroup;
 			children = (
+				84CCB90F1E463D34004A1423 /* FirstViewControllerTableViewCell.swift */,
 				84CCB8F81E46349C004A1423 /* ShongTodoLocator */,
 				84CCB8F71E46349C004A1423 /* Products */,
 			);
@@ -142,6 +145,7 @@
 				84CCB8FE1E46349C004A1423 /* SecondViewController.swift in Sources */,
 				84CCB8FA1E46349C004A1423 /* AppDelegate.swift in Sources */,
 				84CCB8FC1E46349C004A1423 /* FirstViewController.swift in Sources */,
+				84CCB9101E463D34004A1423 /* FirstViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				84CCB90C1E46349C004A1423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
