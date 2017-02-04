@@ -47,14 +47,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         navigationController?.pushViewController(myVC, animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailSegue" {
-            // Setup new v
-            print("hoo")
-        }
-    }
-
+ 
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
     }

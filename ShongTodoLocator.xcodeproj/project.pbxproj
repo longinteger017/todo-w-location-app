@@ -15,6 +15,7 @@
 		84CCB9061E46349C004A1423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CCB9041E46349C004A1423 /* LaunchScreen.storyboard */; };
 		84CCB9101E463D34004A1423 /* FirstViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCB90F1E463D34004A1423 /* FirstViewControllerTableViewCell.swift */; };
 		84CCB9121E466B94004A1423 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCB9111E466B94004A1423 /* detailViewController.swift */; };
+		84CCB9151E467BA2004A1423 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCB9141E467BA2004A1423 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84CCB9071E46349C004A1423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CCB90F1E463D34004A1423 /* FirstViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewControllerTableViewCell.swift; path = ../FirstViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		84CCB9111E466B94004A1423 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = detailViewController.swift; path = ../detailViewController.swift; sourceTree = "<group>"; };
+		84CCB9141E467BA2004A1423 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CCB9151E467BA2004A1423 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				84CCB8F81E46349C004A1423 /* ShongTodoLocator */,
 				84CCB8F71E46349C004A1423 /* Products */,
+				84CCB9131E467BA2004A1423 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				84CCB9071E46349C004A1423 /* Info.plist */,
 			);
 			path = ShongTodoLocator;
+			sourceTree = "<group>";
+		};
+		84CCB9131E467BA2004A1423 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CCB9141E467BA2004A1423 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShongTodoLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.beuth-hochschule.ShongTodoLocator";
@@ -284,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ShongTodoLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.beuth-hochschule.ShongTodoLocator";
