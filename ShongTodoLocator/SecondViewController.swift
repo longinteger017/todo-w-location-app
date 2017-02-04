@@ -20,7 +20,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         }
         
         if (locationField.text != ""){
-            examples.append(locationField.text!)
+            listOfLocations.append(locationField.text!)
             locationField.text = ""
         }
     }
