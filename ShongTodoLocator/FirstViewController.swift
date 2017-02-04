@@ -8,8 +8,10 @@
 
 import UIKit
 
-var examples = ["create task and location on second view", "share data from 2 to 1"]
-var listOfLocations = ["test","test2"]
+var examples = [String]()
+//["create task and location on second view", "share data from 2 to 1"]
+var listOfLocations = [String]()
+    //["test","test2"]
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -34,11 +36,25 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete{
             examples.remove(at: indexPath.row)
+            listOfLocations.remove(at:indexPath.row)
             tableView.reloadData()
         }
-    
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
+        // should work but gives error: myVC.detailLabel.text = listOfLocations[indexPath.row]
+        
+        navigationController?.pushViewController(myVC, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            // Setup new v
+            print("hoo")
+        }
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
     }
@@ -52,7 +68,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.didReceiveMemoryWarning()
         
     }
-
+   
 
 }
 
