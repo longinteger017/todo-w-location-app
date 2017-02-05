@@ -12,7 +12,9 @@ import CoreLocation
 
 class detailViewController: UIViewController {
     var stringPassed = ""
+    var taskPassed = ""
     @IBOutlet var detailLabel: UILabel!
+    @IBOutlet var taskLabel: UILabel!
     @IBOutlet var map: MKMapView!
 
     /* in this function the detailController will get the address (stringPassed), 
@@ -22,7 +24,7 @@ class detailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         detailLabel.text = stringPassed
-    
+        taskLabel.text = taskPassed
         let address = stringPassed
         let geocoder = CLGeocoder()
         

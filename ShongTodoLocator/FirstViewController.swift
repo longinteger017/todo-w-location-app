@@ -50,6 +50,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let myVC = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! detailViewController
         myVC.stringPassed = listOfLocations[indexPath.row]
+        myVC.taskPassed = examples[indexPath.row]
         navigationController?.pushViewController(myVC, animated: true)
     }
  
