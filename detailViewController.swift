@@ -2,7 +2,7 @@
 //  detailViewController.swift
 //  ShongTodoLocator
 //
-//  Created by admin on 04.02.17.
+//  Created by admin on 03.02.17.
 //  Copyright © 2017 Weeabos. All rights reserved.
 //
 
@@ -13,29 +13,15 @@ import CoreLocation
 class detailViewController: UIViewController {
     var stringPassed = ""
     @IBOutlet var detailLabel: UILabel!
-    
     @IBOutlet var map: MKMapView!
-    var  initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
 
-    
+    /* in this function the detailController will get the address (stringPassed), 
+     * which is passed from tableView controller and literally parses it
+     * down into coordinates (longitude and latitude) with the help the class CLGeocoder
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         detailLabel.text = stringPassed
-        
-       /*
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.1, 0.1)
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(52.415005, 13.355747)
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-    
-        map.setRegion(region, animated: true)
-        
-        let annotation = MKPointAnnotation()
-        
-        annotation.coordinate = location
-        annotation.title = "MY SHOP"
-        annotation.subtitle = "COME VISIT ME HERE!"
-        map.addAnnotation(annotation)
-        */
     
         let address = stringPassed
         let geocoder = CLGeocoder()
@@ -52,7 +38,6 @@ class detailViewController: UIViewController {
                 region.span = MKCoordinateSpanMake(0.5, 0.5)
                 self.map.setRegion(region, animated: true)
                 self.map.addAnnotation(placemark)
-                
                 }
             }
         )
@@ -60,16 +45,5 @@ class detailViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
