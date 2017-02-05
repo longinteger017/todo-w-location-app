@@ -4,10 +4,11 @@
   / / / /_/ / /_/ / /_/ / /___/ /_/ / /__/ /_/ / /_/ /_/ / /
  /_/  \____/_____/\____/_____/\____/\___/\__,_/\__/\____/_/
 
-=================== ToDo Locator App============================
+=================== ToDoLocator App============================
 Long Pham
 Thee Vanichangkul
 Mirza Brcaninovic
 
 =================== Beschreibung ===============================
 
+ToDoLocator ist eine To-do App die man eine Aufgabe mit einer Adresse auf der Karte verknüpfen kann.
