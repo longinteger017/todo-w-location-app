@@ -58,6 +58,10 @@ eingegebenen Adresse sehen.
 Schritt 5:
 Sie können per Doppel-Klick in die Karte reinzoomen.
 
+Schritt 6:
+Wenn Sie wieder auf die Startseite gehen und nach links wischen, können Sie eine Aufgabe
+mit zugehöriger Adresse löschen.
+
 Für Herrn MacOS:
 
 In diesem Stadium der Entwicklung fehlen noch folgende Punkte, die wir für
